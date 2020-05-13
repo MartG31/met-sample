@@ -1,0 +1,59 @@
+// th.index,
+// td.index {
+//     background-color: white !important;
+//     border-top: 1px solid white !important;
+//     border-bottom: none !important;
+// }
+// div.DTFC_LeftHeadWrapper table {
+//     border-bottom: 1px solid white !important;
+// }
+// div.DTFC_LeftHeadWrapper th {
+//     border-bottom: 1px solid white !important;
+// }
+// div.DTFC_LeftBodyWrapper {
+//     border-right: 1px solid black;
+// }
+// div.DTFC_LeftFootWrapper th {
+//     border-top: 1px solid white !important;
+// }
+
+// .no-sort::after { display: none!important; }
+
+// .no-sort { pointer-events: none!important; cursor: default!important; }
+
+.table-responsive {
+	padding: .4em;
+}
+
+.datatable {
+	// font-size: .8em;
+
+
+}
+
+// Assets
+
+.dataTables_wrapper {
+
+	font-size: .8em;
+
+	.dataTables_length {
+
+	}
+
+	.paginate_button > a {
+		color: inherit;
+	}
+
+	.paginate_button.active > a {
+		color: $qu_white;
+		background-color: $qu_orange;
+		border-color: rgba($qu_orange,.5);
+
+		
+	}
+	.paginate_button > a:focus {
+		border-color: $qu_dark_blue;
+		outline-color: $qu_dark_blue;
+	}
+}

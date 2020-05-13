@@ -1,0 +1,60 @@
+
+footer {
+	background-color: $footer_bg;
+	color: $qu_med_gray;
+	text-align: center;
+	padding: .5em;
+	box-shadow: 0 0 .5em $qu_dark_gray;
+
+	#socials {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		margin-top: .5em;
+		margin-bottom: 1em;
+	}
+
+	#socials > a {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		width: 1.8em;
+		height: 1.8em;
+		border: .1em solid $qu_med_gray;
+		border-radius: 50%;
+
+		font-size: 1.5em;
+		background-color: $qu_dark_gray;
+		color: $qu_med_gray;
+
+		margin: .2em;
+
+		transition: color 1s, background-color 1.5s;
+
+	}
+
+	#socials > a:hover {
+
+		background-color: $qu_med_gray;
+		color: $qu_dark_gray;
+
+		transition: color .5s, background-color .8s;
+	}
+
+	.qu-brand {
+		color: $qu_orange;
+		font-weight: bold;
+	}
+
+	#footer-info {
+		font-size: .6em;
+		color: $qu_dark_gray;
+		margin: 1em;
+	}
+
+}

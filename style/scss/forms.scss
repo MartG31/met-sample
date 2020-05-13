@@ -1,0 +1,138 @@
+
+// BATCH-BLOC
+
+#batch-bloc {
+	display: none;
+}
+
+
+// FORMS
+
+input[type=file] {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
+
+select:focus,
+input[type=text]:focus, 
+input[type=search]:focus 
+{
+    border-color: rgba($qu_orange,.4) !important;
+    outline-color: rgba($qu_orange,.4) !important;
+    box-shadow: 0 0 2px rgba($qu_orange,.1) inset, 0 0 8px rgba($qu_orange,.6)!important;
+}
+
+.form-group {
+    padding: 0;
+    margin-bottom: 2em;
+
+
+    p {
+        margin: .3em;
+    }
+
+}
+
+.submit-group {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+input + span {
+    padding-right: 30px;
+}
+/*
+input:invalid+span:after {
+    position: absolute; 
+    content: '✖';
+    padding-left: 5px;
+}
+
+input:valid+span:after {
+    position: absolute;
+    content: '✓';
+    padding-left: 5px;
+}
+*/
+input:invalid {
+    border : 1px solid red;
+}
+
+input:required {
+    border : 1px solid #ccc;
+}
+
+
+// BUTTONS
+// Loader Button réalisé grâce à Codepen (https://codepen.io/Guelderman/pen/GOWWqV)
+
+.submit_btn {
+    // display: block;
+    // margin: auto;
+    // width: 50%;
+}
+
+.s-btn {
+    outline: none;
+    border-radius: $base_radius;
+    background-color: $qu_orange;
+    border: 1px solid $qu_dark_blue;
+    box-shadow: 0 0 2px $qu_dark_blue;
+    padding: .5em 1em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+.s-btn span {
+    white-space: nowrap;
+    transition: opacity 0.4s ease-in-out;
+}
+.s-btn:hover {
+    background-color: #122b40;
+}
+.s-btn:active {
+    background-color: #029295;
+}
+.s-btn.loading {
+    width: 50px;
+    border-radius: 60px;
+    background-color: transparent;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-name: loading;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+}
+.s-btn.loading span {
+    opacity: 0;
+}
+
+.s-btn.a4.loading {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    animation-name: loading4;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loading4 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

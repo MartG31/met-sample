@@ -1,0 +1,41 @@
+
+#main-navbar {
+	background-color: $navbar_bg;
+	border: none;
+	color: $qu_med_gray;
+	box-shadow: 0 0 .5em $qu_dark_gray;
+
+	.navbar-brand {
+		transition: color 1s;
+	}
+
+	.navbar-brand:hover {
+		color: $qu_whiter;
+		transition: color .8s;
+		
+	}
+
+	.navbar-toggle {
+		font-size: 1.2em;
+		padding: .3em .5em;
+		margin: .3em;
+		background-color: rgba($qu_whiter, 0.1);
+		transition: background-color .5s;
+	}
+
+	.navbar-toggle:hover {
+		background-color: rgba($qu_whiter, 0.3);
+		transition: background-color .3s;
+	}
+
+	.navbar-nav a {
+		transition: color 1s, background-color 1.5s;
+	}
+
+	.navbar-nav a:hover {
+		color: $qu_whiter;
+		background-color: rgba($qu_orange, .3);
+		transition: color .5s, background-color .8s;
+	}
+}
+

@@ -1,0 +1,18 @@
+.bloc-jauges {
+    display: flex;
+    flex-direction: column;
+}
+
+#rectangleNeedle, #textCloud 
+{
+    display: inline-block;
+}
+
+#rectangleNeedle {
+    width: 100%;
+}
+
+#textCloud {
+    width: 35%;
+    vertical-align: bottom;
+}
