@@ -16,6 +16,8 @@ use Teapot\StatusCode;
 
 class WebPageTestClient {
 
+    const API_KEY = '???';
+
     public function requestWPT($url) {
 
         $wpt = new WebPageTest(self::API_KEY);
